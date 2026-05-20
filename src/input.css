@@ -184,17 +184,18 @@
     background: rgba(255, 255, 255, 0.18);
   }
   .hero__nav-divider {
-    display: none;
+    display: block;
+    width: 1px;
+    height: 1.25rem;
+    background: rgba(255, 255, 255, 0.4);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    transition: background-color 250ms ease;
   }
   @media (min-width: 640px) {
     .hero__nav-divider {
-      display: block;
-      width: 1px;
-      height: 1.25rem;
-      background: rgba(255, 255, 255, 0.4);
       margin-left: 1.25rem;
       margin-right: 1.25rem;
-      transition: background-color 250ms ease;
     }
   }
   .hero__nav-cta {
