@@ -286,8 +286,100 @@
           class="hero__nav-cta"
           >Přihlásit se</a
         >
+        <button
+          type="button"
+          class="hero__nav-toggle"
+          aria-controls="hero-mobile-menu"
+          aria-expanded="false"
+          aria-label="Otevřít menu"
+        >
+          <svg
+            class="hero__nav-toggle-icon hero__nav-toggle-icon--open"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg
+            class="hero__nav-toggle-icon hero__nav-toggle-icon--close"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
       </div>
     </nav>
+    <div
+      id="hero-mobile-menu"
+      class="hero__mobile-menu"
+      aria-hidden="true"
+    >
+      <ul class="hero__mobile-menu-list">
+        <li><a href="#o-kurzu">O kurzu</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#instruktori">Instruktoři</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="hero__mobile-menu-socials">
+        <a
+          href="TODO_INSTAGRAM_URL"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+          </svg>
+        </a>
+        <a
+          href="TODO_FACEBOOK_URL"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
     <!-- ========== HERO (full-bleed photo) ========== -->
     <header id="top" class="hero">
       <div class="hero__media">
@@ -1141,11 +1233,53 @@
       (function () {
         var nav = document.querySelector(".hero__nav");
         if (!nav) return;
-        var sync = function () {
+        var toggle = document.querySelector(".hero__nav-toggle");
+        var menu = document.getElementById("hero-mobile-menu");
+
+        var syncScroll = function () {
+          if (toggle && toggle.getAttribute("aria-expanded") === "true") return;
           nav.classList.toggle("is-scrolled", window.scrollY > 24);
         };
-        sync();
-        window.addEventListener("scroll", sync, { passive: true });
+        syncScroll();
+        window.addEventListener("scroll", syncScroll, { passive: true });
+
+        if (!toggle || !menu) return;
+
+        var setOpen = function (open) {
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          toggle.setAttribute("aria-label", open ? "Zavřít menu" : "Otevřít menu");
+          menu.classList.toggle("is-open", open);
+          menu.setAttribute("aria-hidden", open ? "false" : "true");
+          document.body.classList.toggle("no-scroll", open);
+          if (open) {
+            nav.classList.add("is-scrolled");
+          } else {
+            syncScroll();
+          }
+        };
+
+        toggle.addEventListener("click", function () {
+          var open = toggle.getAttribute("aria-expanded") !== "true";
+          setOpen(open);
+        });
+
+        menu.addEventListener("click", function (e) {
+          var target = e.target;
+          while (target && target !== menu) {
+            if (target.tagName === "A") {
+              setOpen(false);
+              return;
+            }
+            target = target.parentNode;
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+            setOpen(false);
+            toggle.focus();
+          }
+        });
       })();
     </script>
 
