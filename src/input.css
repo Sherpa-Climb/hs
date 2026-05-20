@@ -249,6 +249,26 @@
     object-fit: cover;
     object-position: center;
   }
+  @media (max-width: 639px) {
+    .hero__media::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 24rem;
+      pointer-events: none;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.55) 45%,
+        rgba(0, 0, 0, 0.46) 65%,
+        rgba(0, 0, 0, 0.30) 82%,
+        rgba(0, 0, 0, 0.12) 93%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
   .hero__media::after {
     content: "";
     position: absolute;
