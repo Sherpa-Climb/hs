@@ -236,7 +236,7 @@
     flex-direction: column;
   }
   @media (max-width: 639px) {
-    .hero { min-height: clamp(480px, 70vh, 640px); }
+    .hero { min-height: clamp(580px, 88vh, 780px); }
   }
   .hero__media {
     position: absolute;
