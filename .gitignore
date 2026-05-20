@@ -1,9 +1,10 @@
 node_modules/
-img/raw/
 .DS_Store
 *.log
 
 # Override global gitignore — dist/output.css is committed for GitHub Pages
 !dist/
 !dist/output.css
+# Override global gitignore — raw originals are tracked
+!img/raw/
 .claude/worktrees
