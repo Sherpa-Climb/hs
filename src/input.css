@@ -17,6 +17,20 @@
   html {
     scroll-behavior: smooth;
   }
+  #o-kurzu,
+  #galerie,
+  #instruktori,
+  #faq {
+    scroll-margin-top: 3.5rem;
+  }
+  @media (min-width: 640px) {
+    #o-kurzu,
+    #galerie,
+    #instruktori,
+    #faq {
+      scroll-margin-top: 4.5rem;
+    }
+  }
   body {
     background: var(--color-paper);
     color: var(--color-ink);
