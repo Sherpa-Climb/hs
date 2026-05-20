@@ -62,7 +62,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/output.css" />
-    <script src="js/hero-list.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -215,115 +214,106 @@
     </script>
   </head>
   <body>
-    <!-- ========== HERO (full-bleed photo + integrated nav) ========== -->
-    <header id="top" class="hero">
-      <div class="hero__media">
-        <img
-          id="hero-img"
-          alt="Lezení ve skále — kurz horolezecké školy Sherpa Climb"
-        />
-        <script>
-          (function () {
-            var isMobile = window.matchMedia("(max-width: 639px)").matches;
-            var l = isMobile
-              ? window.HERO_IMAGES_MOBILE
-              : window.HERO_IMAGES_DESKTOP;
-            if (!l || !l.length) l = window.HERO_IMAGES_DESKTOP;
-            var p =
-              l && l.length
-                ? l[Math.floor(Math.random() * l.length)]
-                : "img/hero/horizontal_hero-1.webp";
-            document.getElementById("hero-img").src = p;
-          })();
-        </script>
-      </div>
-      <nav class="hero__nav" aria-label="Hlavní navigace">
-        <a
-          href="#top"
-          class="hero__brand"
-          aria-label="Horolezecká škola Sherpa Climb"
-        >
-          <span class="hero__brand-eyebrow">Horolezecká škola</span>
-          <span class="hero__brand-name">Sherpa Climb</span>
-        </a>
-        <div class="hero__nav-right">
-          <div class="hero__nav-links">
-            <a href="#o-kurzu">O kurzu</a>
-            <a href="#galerie">Galerie</a>
-            <a href="#instruktori">Instruktoři</a>
-            <a href="#faq">FAQ</a>
-          </div>
-          <div class="hero__nav-socials">
-            <a
-              href="TODO_INSTAGRAM_URL"
-              target="_blank"
-              rel="noopener"
-              aria-label="Instagram"
-              class="hero__nav-icon"
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-              </svg>
-            </a>
-            <a
-              href="TODO_FACEBOOK_URL"
-              target="_blank"
-              rel="noopener"
-              aria-label="Facebook"
-              class="hero__nav-icon"
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                />
-              </svg>
-            </a>
-          </div>
+    <nav class="hero__nav" aria-label="Hlavní navigace">
+      <a
+        href="#top"
+        class="hero__brand"
+        aria-label="Horolezecká škola Sherpa Climb"
+      >
+        <span class="hero__brand-eyebrow">Horolezecká škola</span>
+        <span class="hero__brand-name">Sherpa Climb</span>
+      </a>
+      <div class="hero__nav-right">
+        <div class="hero__nav-links">
+          <a href="#o-kurzu">O kurzu</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#instruktori">Instruktoři</a>
+          <a href="#faq">FAQ</a>
         </div>
-      </nav>
-      <div class="hero__content container-x">
-        <h1 class="h-display reveal max-w-4xl">
-          <span class="hero__hl"
-            >Nauč se lézt tam, kde&nbsp;to&nbsp;dává smysl.</span
+        <div class="hero__nav-socials">
+          <a
+            href="TODO_INSTAGRAM_URL"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            class="hero__nav-icon"
           >
-        </h1>
-        <p
-          class="reveal mt-6 max-w-2xl text-lg sm:text-xl"
-          style="color: var(--color-ink-soft)"
-        >
-          <span class="hero__hl"
-            >Jsme garantovaná horoškola ČHS s více než 25 letou historií.</span
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+          </a>
+          <a
+            href="TODO_FACEBOOK_URL"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            class="hero__nav-icon"
           >
-        </p>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </a>
+        </div>
+        <span class="hero__nav-divider" aria-hidden="true"></span>
         <a
-          class="btn-primary reveal mt-8 hidden sm:inline-flex"
           href="https://goo.gl/forms/C2psHG5ZXITLJLCq1"
           target="_blank"
           rel="noopener"
-          >Přihlásit se na kurz</a
+          class="hero__nav-cta"
+          >Přihlásit se</a
         >
+      </div>
+    </nav>
+    <!-- ========== HERO (full-bleed photo) ========== -->
+    <header id="top" class="hero">
+      <div class="hero__media">
+        <picture>
+          <source
+            media="(max-width: 639px)"
+            srcset="img/hero/vertical_IMG_6198.webp"
+          />
+          <img
+            src="img/gallery/IMG_9645.webp"
+            alt="Lezení ve skále — kurz horolezecké školy Sherpa Climb"
+          />
+        </picture>
+      </div>
+      <div class="hero__content container-x">
+        <h1 class="h-display reveal max-w-4xl">
+          <span class="hero__hl"
+            >Od&nbsp;prvního uzlu po&nbsp;horský vrchol.</span
+          >
+        </h1>
+        <p class="hero__lede reveal mt-5 max-w-2xl">
+          <span class="hero__hl"
+            >Jsme garantovaná horoškola ČHS s&nbsp;více než 25 letou
+            historií.</span
+          >
+        </p>
       </div>
     </header>
 
@@ -332,17 +322,18 @@
       <div class="grid gap-12 lg:grid-cols-12">
         <div class="reveal lg:col-span-5">
           <p class="eyebrow">O kurzu</p>
-          <h2 class="h-section mt-3">Co se vlastně naučíš?</h2>
+          <h2 class="h-section mt-3">Co se naučíš?</h2>
         </div>
         <div class="reveal lg:col-span-7">
           <p
             class="text-lg leading-relaxed"
             style="color: var(--color-ink-soft)"
           >
-            Pod dohledem certifikovaných instruktorů ČHS si osvojíš základní
-            lezecké dovednosti, které ti otevřou dveře do všech lezeckých
-            disciplín. Hlavní důraz klademe na perfektní pochopení a následný
-            praktických nácvik. blabla.
+            Nabízíme unikátní sezónní kurz pro začínající i pokročilé lezce. Pod
+            dohledem certifikovaných instruktorů ČHS si osvojíš základní lezecké
+            dovednosti, které ti otevřou dveře do sportovního, tradičního i
+            horského lezení. <b>Metodicky a&nbsp;bezpečně.</b> Kurz je rozdělen
+            do tří na sebe navazujících částí.
           </p>
         </div>
       </div>
@@ -356,7 +347,7 @@
           <img
             class="course-card__photo"
             src="img/gallery/IMG_0138.webp"
-            alt="Teoretická část kurzu"
+            alt="Metodická část kurzu"
             loading="lazy"
             style="object-position: center 25%"
           />
@@ -367,18 +358,39 @@
                   class="text-2xl font-semibold tracking-tight sm:text-3xl"
                   style="font-family: var(--font-display)"
                 >
-                  Teoretická část
+                  Metodická část
                 </h3>
               </div>
               <p
                 class="text-base leading-relaxed lg:col-span-7"
                 style="color: var(--color-ink-soft)"
               >
-                Šest víkendů metodiky pro bezpečný pohyb na skále a v horách:
-                uzly, lanové techniky, jištění, slanění, záchrana, meteorologie.
-                první pomoc. Sobota na umělé stěně, neděle na skalách.
+                Víkendy plné metodiky pro bezpečný pohyb na skále a v horách:
+                uzly, lanové techniky, záchrana, výbava, první pomoc,
+                meteorologie. Zakončeno víkendem s chytáním pádů a zkouškami,
+                které ověří tvé znalosti, aby jsi s námi mohl do praktické
+                části.
               </p>
             </header>
+
+            <div
+              class="mt-5 rounded-xl border p-4"
+              style="
+                border-color: var(--color-line);
+                background: var(--color-paper);
+              "
+            >
+              <p class="eyebrow">Bonus v ceně</p>
+              <p class="mt-1 text-base">
+                Víkend <strong>Zdravověda</strong> s
+                <a
+                  href="#instruktor-martin-honzik"
+                  class="underline underline-offset-4"
+                  >Martinem Honzíkem</a
+                >
+                — první pomoc na skalách i v horách.
+              </p>
+            </div>
 
             <ul class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               <li
@@ -403,7 +415,7 @@
                 >
                   Délka
                 </p>
-                <p class="mt-1 text-base font-medium">6 víkendů</p>
+                <p class="mt-1 text-base font-medium">5 + 1 víkendů</p>
               </li>
               <li
                 class="rounded-xl border p-4"
@@ -434,7 +446,7 @@
                   class="mt-0.5 text-xs italic"
                   style="color: var(--color-ink-soft)"
                 >
-                  9 700 Kč celkem
+                  9 900 Kč celkem
                 </p>
               </li>
             </ul>
@@ -490,25 +502,6 @@
               </p>
             </header>
 
-            <div
-              class="mt-5 rounded-xl border p-4"
-              style="
-                border-color: var(--color-line);
-                background: var(--color-paper);
-              "
-            >
-              <p class="eyebrow">Bonus v ceně</p>
-              <p class="mt-1 text-base">
-                Víkend <strong>Zdravověda</strong> s
-                <a
-                  href="#instruktor-martin-honzik"
-                  class="underline underline-offset-4"
-                  >Martinem Honzíkem</a
-                >
-                — první pomoc na skalách i v horách.
-              </p>
-            </div>
-
             <ul class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               <li
                 class="rounded-xl border p-4"
@@ -532,7 +525,7 @@
                 >
                   Délka
                 </p>
-                <p class="mt-1 text-base font-medium">5 + 1 víkendů</p>
+                <p class="mt-1 text-base font-medium">5 víkendů</p>
               </li>
               <li
                 class="rounded-xl border p-4"
@@ -558,7 +551,7 @@
                 >
                   Cena
                 </p>
-                <p class="mt-1 text-base font-medium">985 Kč / víkend</p>
+                <p class="mt-1 text-base font-medium">1180 Kč / víkend</p>
                 <p
                   class="mt-0.5 text-xs italic"
                   style="color: var(--color-ink-soft)"
@@ -1255,28 +1248,17 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-    <a
-      href="https://goo.gl/forms/C2psHG5ZXITLJLCq1"
-      target="_blank"
-      rel="noopener"
-      class="signup-fab"
-      aria-label="Přihlásit se na kurz"
-    >
-      <svg
-        class="signup-fab__icon"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-      >
-        <path d="M12 20h9" />
-        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4z" />
-      </svg>
-      <span class="signup-fab__label">Přihlásit</span>
-    </a>
+    <script>
+      (function () {
+        var nav = document.querySelector(".hero__nav");
+        if (!nav) return;
+        var sync = function () {
+          nav.classList.toggle("is-scrolled", window.scrollY > 24);
+        };
+        sync();
+        window.addEventListener("scroll", sync, { passive: true });
+      })();
+    </script>
 
     <script type="module" src="js/instructors.js"></script>
     <script type="module" src="js/gallery.js"></script>
