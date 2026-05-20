@@ -341,7 +341,7 @@
       <ol class="course-list mt-12 space-y-6 lg:space-y-8">
         <!-- ===== 1. TEORETICKÁ ČÁST ===== -->
         <li
-          class="reveal overflow-hidden rounded-2xl border"
+          class="course-card reveal overflow-hidden rounded-2xl border"
           style="border-color: var(--color-line)"
         >
           <img
@@ -373,13 +373,7 @@
               </p>
             </header>
 
-            <div
-              class="mt-5 rounded-xl border p-4"
-              style="
-                border-color: var(--color-line);
-                background: var(--color-paper);
-              "
-            >
+            <div class="course-card__box mt-5">
               <p class="eyebrow">Bonus v ceně</p>
               <p class="mt-1 text-base">
                 Víkend <strong>Zdravověda</strong> s
@@ -393,10 +387,7 @@
             </div>
 
             <ul class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -405,10 +396,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">Listopad–Duben</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -417,10 +405,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">5 + 1 víkendů</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -431,10 +416,7 @@
                   Praha a skalní oblasti v okolí
                 </p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -452,18 +434,25 @@
             </ul>
 
             <details class="course-details mt-6">
-              <summary
-                class="cursor-pointer text-sm font-medium underline-offset-4 hover:underline"
-              >
-                <span class="course-details__closed">Podrobný program ▾</span>
-                <span class="course-details__open"
-                  >Skrýt podrobný program ▴</span
-                >
+              <summary class="course-details__summary">
+                <span class="course-details__q">Podrobný program</span>
+                <span class="course-details__icon" aria-hidden="true">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                </span>
               </summary>
-              <div
-                class="mt-4 space-y-3 text-sm leading-relaxed"
-                style="color: var(--color-ink-soft)"
-              >
+              <div class="course-details__body">
                 TODO
               </div>
             </details>
@@ -472,7 +461,7 @@
 
         <!-- ===== 2. PRAKTICKÁ ČÁST ===== -->
         <li
-          class="reveal overflow-hidden rounded-2xl border"
+          class="course-card reveal overflow-hidden rounded-2xl border"
           style="border-color: var(--color-line)"
         >
           <img
@@ -503,10 +492,7 @@
             </header>
 
             <ul class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -515,10 +501,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">Květen–Červen</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -527,10 +510,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">5 víkendů</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -541,10 +521,7 @@
                   Skalní oblasti v&nbsp;ČR
                 </p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -562,18 +539,25 @@
             </ul>
 
             <details class="course-details mt-6">
-              <summary
-                class="cursor-pointer text-sm font-medium underline-offset-4 hover:underline"
-              >
-                <span class="course-details__closed">Podrobný program ▾</span>
-                <span class="course-details__open"
-                  >Skrýt podrobný program ▴</span
-                >
+              <summary class="course-details__summary">
+                <span class="course-details__q">Podrobný program</span>
+                <span class="course-details__icon" aria-hidden="true">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                </span>
               </summary>
-              <div
-                class="mt-4 space-y-3 text-sm leading-relaxed"
-                style="color: var(--color-ink-soft)"
-              >
+              <div class="course-details__body">
                 TODO
               </div>
             </details>
@@ -582,7 +566,7 @@
 
         <!-- ===== 3. LETNÍ VÝCVIK V HORÁCH ===== -->
         <li
-          class="reveal overflow-hidden rounded-2xl border"
+          class="course-card reveal overflow-hidden rounded-2xl border"
           style="border-color: var(--color-line)"
         >
           <img
@@ -613,10 +597,7 @@
             </header>
 
             <ul class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -625,10 +606,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">Srpen</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -637,10 +615,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">7 dní</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -649,10 +624,7 @@
                 </p>
                 <p class="mt-1 text-base font-medium">Alpy</p>
               </li>
-              <li
-                class="rounded-xl border p-4"
-                style="border-color: var(--color-line)"
-              >
+              <li class="course-card__box">
                 <p
                   class="text-xs font-medium tracking-wide uppercase"
                   style="color: var(--color-ink-soft)"
@@ -664,18 +636,25 @@
             </ul>
 
             <details class="course-details mt-6">
-              <summary
-                class="cursor-pointer text-sm font-medium underline-offset-4 hover:underline"
-              >
-                <span class="course-details__closed">Podrobný program ▾</span>
-                <span class="course-details__open"
-                  >Skrýt podrobný program ▴</span
-                >
+              <summary class="course-details__summary">
+                <span class="course-details__q">Podrobný program</span>
+                <span class="course-details__icon" aria-hidden="true">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                </span>
               </summary>
-              <div
-                class="mt-4 space-y-3 text-sm leading-relaxed"
-                style="color: var(--color-ink-soft)"
-              >
+              <div class="course-details__body">
                 TODO
               </div>
             </details>
