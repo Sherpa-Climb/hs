@@ -24,6 +24,13 @@ export const instructors = [
     bio: "Od roku 2000 pracuje jako vedoucí letecký záchranář na Letecké záchranné službě Hradec Králové, kde má na starosti výcvik posádek v oblasti speciálních leteckých činností (lanové techniky při záchraně s vrtulníkem, lety s podvěsem) a v problematice lavinových nehod. Externí instruktor BATLS/BARTS na Fakultě vojenského zdravotnictví Univerzity obrany v Hradci Králové. Člen Lékařské a Metodické komise ČHS, instruktor horolezectví ČHS, akreditovaný instruktor skalního lezení a skialpinismu. Člen výboru Společnosti horské medicíny a Air Rescue Commission ICAR. Mnoho let se podílí na lavinové prevenci, organizaci záchrany při lavinových nehodách a tvorbě metodických postupů.",
   },
   {
+    slug: "lukas-tkac",
+    name: "Lukáš Tkáč",
+    role: "Instruktor ČHS (HAL), člen Metodické komise ČHS",
+    quote: "",
+    bio: "",
+  },
+  {
     slug: "radan-keil",
     name: "Radan Keil",
     role: "Instruktor ČHS (HAL), člen Metodické komise ČHS",
