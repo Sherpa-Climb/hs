@@ -962,4 +962,98 @@
     from { opacity: 0; transform: translateY(-4px); }
     to   { opacity: 1; transform: translateY(0); }
   }
+
+  .footer {
+    background: var(--color-paper);
+    border-top: 1px solid var(--color-line);
+    color: var(--color-ink);
+  }
+  .footer__inner {
+    display: grid;
+    gap: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+  @media (min-width: 640px) {
+    .footer__inner {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+      gap: 4rem;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+  }
+  .footer__brand {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1;
+    color: var(--color-ink);
+  }
+  .footer__brand-eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    color: var(--color-ink-soft);
+    margin-bottom: 0.5rem;
+  }
+  .footer__brand-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .footer__heading {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-ink-soft);
+    margin-bottom: 1rem;
+  }
+  .footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.625rem;
+  }
+  @media (min-width: 640px) {
+    .footer__links {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 2rem;
+    }
+  }
+  .footer__links a {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-ink);
+    text-decoration: none;
+    transition: color 180ms ease;
+  }
+  .footer__links a:hover,
+  .footer__links a:focus-visible {
+    color: var(--color-accent);
+  }
+  .footer__links a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+  .footer__link-sub {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: var(--color-ink-soft);
+  }
+  .footer__bottom {
+    border-top: 1px solid var(--color-line);
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+    font-size: 0.8125rem;
+    color: var(--color-ink-soft);
+  }
 }
