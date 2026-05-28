@@ -77,4 +77,18 @@ function wire() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', wire);
+function wireExpand() {
+  const wrap = document.querySelector('.gallery-wrap');
+  if (!wrap) return;
+  const btn = wrap.querySelector('.gallery-expand');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    wrap.setAttribute('data-collapsed', 'false');
+    btn.setAttribute('aria-expanded', 'true');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  wire();
+  wireExpand();
+});
