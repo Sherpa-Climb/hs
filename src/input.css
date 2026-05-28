@@ -614,6 +614,21 @@
     animation: faqReveal 320ms cubic-bezier(0.16, 1, 0.3, 1);
   }
   .course-details__body p + p { margin-top: 0.625rem; }
+  .course-details__body > * + * { margin-top: 0.625rem; }
+  .course-details__h {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-top: 1.125rem;
+  }
+  .course-details__body > .course-details__h:first-child { margin-top: 0; }
+  .course-details__list {
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+  .course-details__list--ordered { list-style: decimal; }
+  .course-details__list li + li { margin-top: 0.25rem; }
 
   .gallery-col {
     column-count: 1;
