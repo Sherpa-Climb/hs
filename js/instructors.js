@@ -12,7 +12,7 @@ export const instructors = [
   {
     slug: "michal-buril",
     name: "Michal Buřil",
-    role: "Instruktorka ČHS (HAL), člen Vzdělávací komise ČHS",
+    role: "Instruktor ČHS (HAL), člen Vzdělávací komise ČHS",
     quote: "",
     bio: "Horolezectví se věnuje od roku 1999 a je lektorem Vzdělávací komise ČHS. Má rád hory, kde čerpá energii, a lezení, protože na skalách se sejde vždy dobrá parta a o zábavu není nouze. Baví ho výcvik v létě i v zimě a miluje lyže.",
   },
@@ -54,7 +54,7 @@ export const instructors = [
   {
     slug: "michaela-adamkova",
     name: "Michaela Adámková",
-    role: "Instruktor ČHS (HAL), člen Vzdělávací komise ČHS",
+    role: "Instruktorka ČHS (HAL), členka Vzdělávací komise ČHS",
     quote: "",
     bio: "Miluje bytí v horách — v létě písek i bigwall, raději klasické cesty než se tlačit na sportovkách, v zimě lezení ledů, skialpy a freeride.",
   },
@@ -110,7 +110,7 @@ export const instructors = [
   {
     slug: "petra-bellingerova",
     name: "Petra Bellingerová",
-    role: "Instruktor ČHS (SCI)",
+    role: "Instruktorka ČHS (SCI)",
     quote: "",
     bio: "Lezení se věnuji od roku 2009. Od roku 2018 jsem instruktor skalního lezení. Nejraději lezu na Labském pískovci (Ostrov, Tisá, Rájec, Sasko). Přes zimu ráda navštívím i sportovní oblasti na jihu Evropy. Na lezení mám ráda spojení přírody, pohybu, přátelství a životního stylu.",
   },
@@ -131,21 +131,21 @@ export const instructors = [
   {
     slug: "anna-vrbova",
     name: "Anna Vrbová",
-    role: "Instruktor ČHS (SCI)",
+    role: "Instruktorka ČHS (SCI)",
     quote: "",
     bio: "Lezu už dlouhá léta. V dětství a útlém mládí to pro mě byl spíš volnočasový a okrajový koníček. Postupem let jsem ale chtěla své znalosti a zkušenosti předávat dál. Přes 10 let pracuji převážně s dětmi, od roku 2017 jako instruktor lezení na umělé stěně, od roku 2020 jako instruktor skalního lezení a od roku 2025 jako instruktor ČHS. Na lezení mě nejvíce láká nejistota a celková náročnost komplexních výstupů v horách, kam směřuji. Lezení vnímám jako nikdy nekončící proces zlepšování sebe sama, nabírání nových vědomostí a zkušeností a především jako neustálou výzvu, proto se stalo mým největším koníčkem a celoživotní vášní.",
   },
   {
     slug: "jana-vodickova",
     name: "Jana Vodičková",
-    role: "Instruktor ČHS (SCI)",
+    role: "Instruktorka ČHS (SCI)",
     quote: "",
     bio: "Jsem milovnicí hor, přechodů, pohybu v přírodě a lezení. Ať už sportovky, vícedélky nebo písek, hlavně s dobrou partou přátel. Od roku 2025 instruktorka ČHS, abych mohla předat dál poznatky pro tvé lezení.",
   },
   {
     slug: "katerina-fiserova",
     name: "Kateřina Fišerová",
-    role: "Instruktor ČHS (SCI)",
+    role: "Instruktorka ČHS (SCI)",
     quote: "",
     bio: "",
   },
