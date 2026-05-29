@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hs.sherpaclimb.cz/sitemap.xml
+Sitemap: https://uhlajs.github.io/hs/sitemap.xml
