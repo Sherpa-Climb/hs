@@ -77,11 +77,11 @@
     backdrop-filter: saturate(140%) blur(14px);
     -webkit-backdrop-filter: saturate(140%) blur(14px);
     box-shadow: 0 1px 0 rgba(13, 13, 14, 0.06), 0 8px 24px -16px rgba(13, 13, 14, 0.18);
-    padding-top: 0.875rem;
-    padding-bottom: 0.875rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   @media (min-width: 640px) {
-    .hero__nav.is-scrolled { padding-top: 1rem; padding-bottom: 1rem; }
+    .hero__nav.is-scrolled { padding-top: 0.5rem; padding-bottom: 0.5rem; }
   }
   .hero__nav.is-scrolled .hero__brand,
   .hero__nav.is-scrolled .hero__nav-links a {
@@ -106,6 +106,39 @@
     transition: opacity 200ms ease;
   }
   .hero__brand:hover { opacity: 0.85; }
+  .hero__nav-left {
+    display: flex;
+    align-items: center;
+  }
+  .hero__nav-chs {
+    display: none;
+    align-items: center;
+    transition: opacity 200ms ease, border-color 250ms ease;
+  }
+  @media (min-width: 640px) {
+    .hero__nav-chs {
+      display: inline-flex;
+      margin-left: 1.25rem;
+      padding-left: 1.25rem;
+      border-left: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+  .hero__nav-chs:hover { opacity: 0.78; }
+  .hero__nav-chs img {
+    flex-shrink: 0;
+    object-fit: contain;
+    /* black source recolored to white over the hero photo */
+    filter: brightness(0) invert(1)
+      drop-shadow(0 1px 3px rgba(0, 0, 0, 0.35));
+    transition: filter 250ms ease;
+  }
+  .hero__nav-chs-full { display: block; width: 175px; height: 80px; }
+  .hero__nav.is-scrolled .hero__nav-chs {
+    border-left-color: rgba(13, 13, 14, 0.18);
+  }
+  .hero__nav.is-scrolled .hero__nav-chs img {
+    filter: none;
+  }
   .hero__brand-eyebrow {
     font-size: 0.625rem;
     font-weight: 500;
