@@ -419,6 +419,21 @@
       0 2px 18px rgba(0, 0, 0, 0.55),
       0 1px 3px rgba(0, 0, 0, 0.45);
   }
+  .hero__lede {
+    font-size: clamp(1.125rem, 1.8vw, 1.4rem);
+    line-height: 1.5;
+  }
+  .hero__lede-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: opacity 0.18s;
+  }
+  .hero__lede-link:hover,
+  .hero__lede-link:focus-visible {
+    opacity: 0.7;
+  }
 
   .eyebrow {
     @apply text-sm font-medium uppercase tracking-[0.2em];
@@ -950,6 +965,24 @@
     font-weight: 600;
     font-size: 1.5rem;
     letter-spacing: -0.01em;
+  }
+  .footer__chs {
+    display: inline-block;
+    margin-top: 1.5rem;
+    transition: opacity 180ms ease;
+  }
+  .footer__chs img {
+    width: 180px;
+    height: auto;
+  }
+  .footer__chs:hover,
+  .footer__chs:focus-visible {
+    opacity: 0.65;
+  }
+  .footer__chs:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+    border-radius: 0.25rem;
   }
   .footer__heading {
     font-size: 0.75rem;
