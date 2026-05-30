@@ -94,6 +94,13 @@ export const instructors = [
     bio: "Pracuji na Farmaceutické fakultě v Hradci Králové. S lezením jsem začal v roce 2019. Instruktorem ČHS jsem od roku 2024. Lezení jak sportovní, tak klasické, nejčastěji Jizerky, Orlické hory, Vysočina.",
   },
   {
+    slug: "lukas-sedivy",
+    name: "Lukáš Šedivý",
+    role: "Instruktor ČHS (SCI)",
+    quote: "",
+    bio: "Na lezení miluju, že mě drží v přítomném okamžiku, neexistuje nic než další krok. A z toho se nevykecáš. Naučil jsem se strachu naslouchat a nenechat se jím sežrat, věřit svému tělu i hlavě, že ten další krok prostě půjde. Ale nejvíc je pro mě lezení o lidech: o partě, přátelství, důvěře ve spolulezce. Když učím, napřed buduju pocit bezpečí, teprve pak řešíme metodiku. Improvizační divadlo mě naučilo ocenit chybu — když se nebojíš něco zkazit a zeptat se, posuneš se podle mě nejdál. Sám nejradši lezu po vlastním, na tvrdé skále i na písku (miluju Ostrov), rád vyrážím do hor. Ale nejde mi o vrchol, jde o cestu nahoru a o lidi, se kterými ji lezu. Tak pojď, vylezeme ji spolu.",
+  },
+  {
     slug: "andrej-krylov",
     name: "Andrej Krylov",
     role: "Instruktor ČHS (SCI)",
