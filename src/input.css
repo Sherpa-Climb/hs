@@ -11,6 +11,7 @@
   --color-line: #e5e3da;
   --color-accent: #d94f2a;
   --color-accent-hover: #b73d1c;
+  --color-accent-tint: #f8eee9;
 }
 
 @layer base {
@@ -516,6 +517,24 @@
     border: 1px solid var(--color-line);
     border-radius: 0.75rem;
     padding: 1rem;
+  }
+
+  .notice {
+    background: var(--color-accent-tint);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+  .notice__label {
+    @apply text-xs font-medium uppercase tracking-[0.2em];
+    color: var(--color-accent);
+  }
+  .notice__text {
+    margin-top: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--color-ink);
   }
   .course-details {
     background: var(--color-paper);
